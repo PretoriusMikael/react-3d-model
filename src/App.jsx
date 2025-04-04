@@ -14,7 +14,11 @@ function App() {
       <Header />
       <Canvas>
         <ambientLight />
-        <OrbitControls />
+        <OrbitControls 
+          autoRotate={true}
+          autoRotateSpeed={0.5}
+          enablePan={false}
+        />
         <Suspense fallback={null}>
           <Earth />
         </Suspense>
